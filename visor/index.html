@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ca" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc/visor/">
+        <link rel="canonical" href="http://127.0.0.1:8000/geocodificador-doc_en/visor/">
       
       
         <link rel="prev" href="../ex_comarca_municipi/">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Visor - Geocodificador ICGC</title>
+        <title>Viewer - ICGC Geocoder</title>
       
     
     
@@ -78,8 +78,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#16-visor-de-mapes-amb-consultes-al-geocodificador-icgc" class="md-skip">
-          Salta el contingut
+        <a href="#16-map-viewer-with-queries-to-the-icgc-geocoder" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -93,8 +93,8 @@
   
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Capçalera">
-    <a href=".." title="Geocodificador ICGC" class="md-header__button md-logo" aria-label="Geocodificador ICGC" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ICGC Geocoder" class="md-header__button md-logo" aria-label="ICGC Geocoder" data-md-component="logo">
       
   <img src="../assets/icgc_gencat_logos_blanc.png" alt="logo">
 
@@ -107,13 +107,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Geocodificador ICGC
+            ICGC Geocoder
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Visor
+              Viewer
             
           </span>
         </div>
@@ -153,7 +153,7 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Selecciona la llengua">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
     </button>
     <div class="md-select__inner">
@@ -171,6 +171,12 @@
             </a>
           </li>
         
+          <li class="md-select__item">
+            <a href=" https://openicgc.github.io/geocodificador-doc_en/" hreflang="es" class="md-select__link">
+              English
+            </a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -185,16 +191,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Cerca">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="Neteja" aria-label="Neteja" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
@@ -205,7 +211,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Inicialitzant cerca
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -216,7 +222,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/OpenICGC/geocodificador-doc" title="Ves al repositori" class="md-source" data-md-component="source">
+        <a href="https://github.com/OpenICGC/geocodificador-doc" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -231,7 +237,7 @@
   
     
       
-<nav class="md-tabs" aria-label="Pestanyes" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -245,7 +251,7 @@
         <a href=".." class="md-tabs__link">
           
   
-  Inici
+  Introduction
 
         </a>
       </li>
@@ -263,7 +269,7 @@
         <a href="../parametres_cerca/" class="md-tabs__link">
           
   
-  Operacions
+  Operations
 
         </a>
       </li>
@@ -281,7 +287,7 @@
   
     
   
-  Documentació
+  Documentation
 
       </a>
     </li>
@@ -298,7 +304,7 @@
         <a href="../ex_adreca/" class="md-tabs__link">
           
   
-  Exemples
+  Examples
 
         </a>
       </li>
@@ -318,7 +324,7 @@
   
     
   
-  Visor
+  Viewer
 
       </a>
     </li>
@@ -335,7 +341,7 @@
         <a href="../tipusToponims/" class="md-tabs__link">
           
   
-  Referències
+  References
 
         </a>
       </li>
@@ -369,18 +375,18 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegació" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Geocodificador ICGC" class="md-nav__button md-logo" aria-label="Geocodificador ICGC" data-md-component="logo">
+    <a href=".." title="ICGC Geocoder" class="md-nav__button md-logo" aria-label="ICGC Geocoder" data-md-component="logo">
       
   <img src="../assets/icgc_gencat_logos_blanc.png" alt="logo">
 
     </a>
-    Geocodificador ICGC
+    ICGC Geocoder
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/OpenICGC/geocodificador-doc" title="Ves al repositori" class="md-source" data-md-component="source">
+      <a href="https://github.com/OpenICGC/geocodificador-doc" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -419,7 +425,7 @@
             
   
   <span class="md-ellipsis">
-    Inici
+    Introduction
   </span>
   
 
@@ -429,7 +435,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Inici
+            Introduction
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -444,7 +450,7 @@
         
   
   <span class="md-ellipsis">
-    Geocodificador ICGC
+    ICGC Geocoder
   </span>
   
 
@@ -487,7 +493,7 @@
             
   
   <span class="md-ellipsis">
-    Operacions
+    Operations
   </span>
   
 
@@ -497,7 +503,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Operacions
+            Operations
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -512,7 +518,7 @@
         
   
   <span class="md-ellipsis">
-    Cerca directa completa
+    Search by indicating the whole address
   </span>
   
 
@@ -533,7 +539,7 @@
         
   
   <span class="md-ellipsis">
-    Cerca directa autocompletar
+    Search with autocomplete
   </span>
   
 
@@ -554,7 +560,7 @@
         
   
   <span class="md-ellipsis">
-    Cerca inversa
+    Reverse search
   </span>
   
 
@@ -582,7 +588,7 @@
         
   
   <span class="md-ellipsis">
-    Documentació
+    Documentation
   </span>
   
 
@@ -617,7 +623,7 @@
             
   
   <span class="md-ellipsis">
-    Exemples
+    Examples
   </span>
   
 
@@ -627,7 +633,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Exemples
+            Examples
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -642,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    1.1 Cercar una adreça
+    1.1 Search for an address
   </span>
   
 
@@ -663,7 +669,7 @@
         
   
   <span class="md-ellipsis">
-    1.2 Cercar un topònim
+    1.2 Search for a toponym
   </span>
   
 
@@ -684,7 +690,7 @@
         
   
   <span class="md-ellipsis">
-    1.3 Geocodificació inversa
+    1.3 Reverse geocoding
   </span>
   
 
@@ -705,7 +711,7 @@
         
   
   <span class="md-ellipsis">
-    1.4 Obtenir el llogaret al que pertany una adreça
+    1.4 Get the 'llogaret' an address belongs to
   </span>
   
 
@@ -726,7 +732,7 @@
         
   
   <span class="md-ellipsis">
-    1.5 Cercar una adreça postal segons el llogaret
+    1.5 Search for a postal address according to the 'llogaret'
   </span>
   
 
@@ -747,7 +753,7 @@
         
   
   <span class="md-ellipsis">
-    1.6 Integració en un visor Leaflet
+    1.6 Integration in a Leaflet viewer
   </span>
   
 
@@ -768,7 +774,7 @@
         
   
   <span class="md-ellipsis">
-    1.7 Prioritzar els resultats més propers a un punt
+    1.7 Prioritize results by proximity
   </span>
   
 
@@ -789,7 +795,7 @@
         
   
   <span class="md-ellipsis">
-    1.8 Restringir la cerca dins una àrea geogràfica circular o rectangular
+    1.8 Narrow the search within a circular or rectangular geographic area
   </span>
   
 
@@ -810,7 +816,7 @@
         
   
   <span class="md-ellipsis">
-    1.9 Filtrar segons tipus de topònim
+    1.9 Filter according to toponym type
   </span>
   
 
@@ -831,7 +837,7 @@
         
   
   <span class="md-ellipsis">
-    1.10 Filtrar per comarca o per municipi
+    1.10 Filter by 'comarca'' or municipality
   </span>
   
 
@@ -868,7 +874,7 @@
           
   
   <span class="md-ellipsis">
-    Visor
+    Viewer
   </span>
   
 
@@ -879,7 +885,7 @@
         
   
   <span class="md-ellipsis">
-    Visor
+    Viewer
   </span>
   
 
@@ -887,7 +893,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -896,95 +902,95 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Taula de continguts
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#geocodificacio-directa" class="md-nav__link">
+  <a href="#direct-geocoding" class="md-nav__link">
     <span class="md-ellipsis">
-      Geocodificació directa
+      Direct geocoding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#geocodificacio-inversa" class="md-nav__link">
+  <a href="#reverse-geocoding" class="md-nav__link">
     <span class="md-ellipsis">
-      Geocodificació inversa
+      Reverse geocoding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prioritzacio-de-resultats" class="md-nav__link">
+  <a href="#prioritization-of-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Priorització de resultats
+      Prioritization of results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipus-delements-a-cercar" class="md-nav__link">
+  <a href="#type-of-elements-to-search" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipus d'elements a cercar
+      Type of elements to search
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nombre-maxim-de-resultats" class="md-nav__link">
+  <a href="#maximum-number-of-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Nombre màxim de resultats
+      Maximum number of results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#consulta-del-tipus-de-toponims" class="md-nav__link">
+  <a href="#query-of-the-type-of-toponyms" class="md-nav__link">
     <span class="md-ellipsis">
-      Consulta del tipus de topònims
+      Query of the type of toponyms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#descarrega" class="md-nav__link">
+  <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
-      Descàrrega
+      Download
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#implementacio" class="md-nav__link">
+  <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementació
+      Implementation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#codi-per-a-incrustar-el-visor" class="md-nav__link">
+  <a href="#code-to-embed-the-viewer" class="md-nav__link">
     <span class="md-ellipsis">
-      Codi per a incrustar el visor
+      Code to embed the viewer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcionalitat-pwa" class="md-nav__link">
+  <a href="#pwa-functionality" class="md-nav__link">
     <span class="md-ellipsis">
-      Funcionalitat PWA
+      PWA functionality
     </span>
   </a>
   
@@ -1024,7 +1030,7 @@
             
   
   <span class="md-ellipsis">
-    Referències
+    References
   </span>
   
 
@@ -1034,7 +1040,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Referències
+            References
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1049,7 +1055,7 @@
         
   
   <span class="md-ellipsis">
-    Tipus de topònims
+    Topoym types
   </span>
   
 
@@ -1079,7 +1085,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Taula de continguts">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1088,95 +1094,95 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Taula de continguts
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#geocodificacio-directa" class="md-nav__link">
+  <a href="#direct-geocoding" class="md-nav__link">
     <span class="md-ellipsis">
-      Geocodificació directa
+      Direct geocoding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#geocodificacio-inversa" class="md-nav__link">
+  <a href="#reverse-geocoding" class="md-nav__link">
     <span class="md-ellipsis">
-      Geocodificació inversa
+      Reverse geocoding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prioritzacio-de-resultats" class="md-nav__link">
+  <a href="#prioritization-of-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Priorització de resultats
+      Prioritization of results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tipus-delements-a-cercar" class="md-nav__link">
+  <a href="#type-of-elements-to-search" class="md-nav__link">
     <span class="md-ellipsis">
-      Tipus d'elements a cercar
+      Type of elements to search
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nombre-maxim-de-resultats" class="md-nav__link">
+  <a href="#maximum-number-of-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Nombre màxim de resultats
+      Maximum number of results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#consulta-del-tipus-de-toponims" class="md-nav__link">
+  <a href="#query-of-the-type-of-toponyms" class="md-nav__link">
     <span class="md-ellipsis">
-      Consulta del tipus de topònims
+      Query of the type of toponyms
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#descarrega" class="md-nav__link">
+  <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
-      Descàrrega
+      Download
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#implementacio" class="md-nav__link">
+  <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementació
+      Implementation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#codi-per-a-incrustar-el-visor" class="md-nav__link">
+  <a href="#code-to-embed-the-viewer" class="md-nav__link">
     <span class="md-ellipsis">
-      Codi per a incrustar el visor
+      Code to embed the viewer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#funcionalitat-pwa" class="md-nav__link">
+  <a href="#pwa-functionality" class="md-nav__link">
     <span class="md-ellipsis">
-      Funcionalitat PWA
+      PWA functionality
     </span>
   </a>
   
@@ -1200,65 +1206,65 @@
   
 
 
-<h1 id="16-visor-de-mapes-amb-consultes-al-geocodificador-icgc">1.6 Visor de mapes amb consultes al Geocodificador ICGC</h1>
-<p>El visor <a href="https://eines.icgc.cat/geocodificador_visor/" target="_blank">https://eines.icgc.cat/geocodificador_visor/</a> és un exemple d'ús del geocodificador ICGC, amb peticions de geocodificació directa i inversa.</p>
+<h1 id="16-map-viewer-with-queries-to-the-icgc-geocoder">1.6 Map viewer with queries to the ICGC Geocoder</h1>
+<p>The viewer <a href="https://eines.icgc.cat/geocodificador_visor/" target="_blank">https://eines.icgc.cat/geocodificador_visor/</a> is an example of using the ICGC geocoder, with requests for direct and reverse geocoding.</p>
 <p><img alt="" src="../img/visorSencer.png" /></p>
-<h2 id="geocodificacio-directa">Geocodificació directa</h2>
-<p>Conté un cercador d'adreces i topònims: a mesura que l'usuari va teclejant el text a cercar, s'envien peticions al servei de geocodificació directa, fins a trobar l'element desitjat i la seva ubicació al mapa.</p>
+<h2 id="direct-geocoding">Direct geocoding</h2>
+<p>It contains a search engine for addresses and place names: as the user types the text to be searched, requests are sent to the direct geocoding service, until the desired item and its location on the map are found.</p>
 <div class="admonition note">
 <p class="admonition-title"> </p>
-<p>Les peticions enviades utilitzen l'operació <strong>autocompletar</strong> amb el paràmetre <strong>text</strong> contenint el text introduït per l'usuari. </p>
-<p>Un exemple d'aquestes peticions és <a href="https://eines.icgc.cat/geocodificador/autocompletar?text=nou%203&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?<strong>text=nou%203</strong>&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5</a></p>
+<p>Submitted requests use the <strong>autocomplete</strong> operation with the <strong>text</strong> parameter containing the text entered by the user.</p>
+<p>An example of these requests is <a href="https://eines.icgc. cat/geocoder/autocomplete?text=new%203&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?<strong>text=nou%203</strong>&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5</a></p>
 </div>
-<h2 id="geocodificacio-inversa">Geocodificació inversa</h2>
-<p>Al fer clic sobre el mapa, es fa una petició de geocodificació inversa, obtenint l'adreca postal i el topònim més propers al punt indicat en un radi de 500 metres.</p>
+<h2 id="reverse-geocoding">Reverse geocoding</h2>
+<p>By clicking on the map, a reverse geocoding request is made, obtaining the postal address and place name closest to the indicated point within a radius of 500 meters.</p>
 <div class="admonition note">
 <p class="admonition-title"> </p>
-<p>Les peticions enviades utilitzen l'operació <strong>invers</strong> amb els paràmetres <strong>lon</strong> i <strong>lat</strong> contenint el punt marcat per l'usuari. </p>
-<p>Un exemple d'aquestes peticions és <a href="https://eines.icgc.cat/geocodificador/invers?lat=41.81623479875584&amp;lon=2.4224853515625004&amp;size=1&amp;boundary.circle.radius=0.5&amp;layers=topo2,address" target="_blank">https://eines.icgc.cat/geocodificador/invers?<strong>lat=41.81623479875584</strong>&amp;<strong>lon=2.4224853515625004</strong>&amp;size=1&amp;boundary.circle.radius=0.5&amp;layers=topo2,address</a></p>
+<p>The sent requests use the <strong>reverse</strong> operation with the <strong>lon</strong> and <strong>lat</strong> parameters containing the point marked by the user.</p>
+<p>An example of these requests is <a href="https://eines.icgc.cat/geocodificador/invers?lat=41.81623479875584&amp;lon=2.4224853515625004&amp;size=1&amp;boundary.circle.radius=0.5&amp;layers=topo2,address" target="_blank">https://eines.icgc.cat/geocodificador/invers?<strong>lat=41.81623479875584</strong>&amp;<strong>lon=2.4224853515625004</strong>&amp;size=1&amp;boundary.circle.radius=0.5&amp;layers=topo2, address</a></p>
 </div>
-<h2 id="prioritzacio-de-resultats">Priorització de resultats</h2>
-<p>Si la casella <strong>Prioritzar els resultats propers al centre del mapa</strong> està activada, a la llista de resultats es mostren primer els resultats més propers al centre del mapa.</p>
+<h2 id="prioritization-of-results">Prioritization of results</h2>
+<p>If the <strong>Prioritize results near the center of the map</strong> box is checked, the results closest to the center of the map are displayed first in the list of results.</p>
 <div class="admonition note">
 <p class="admonition-title"> </p>
-<p>El punt central del mapa s'indica als paràmetres <strong>focus.point.lat</strong> i <strong>focus.point.lon</strong>. </p>
-<p>Un exemple de petició és  <a href="https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&amp;focus.point.lat=41.97952806717199&amp;focus.point.lon=2.8178000450134277&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca<strong>&amp;focus.point.lat=41.97952806717199&amp;focus.point.lon=2.8178000450134277</strong>&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5</a></p>
+<p>The center point of the map is indicated in the <strong>focus.point.lat</strong> and <strong>focus.point.lon</strong> parameters.</p>
+<p>An example of a request is <a href="https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca&amp;focus.point.lat=41.97952806717199&amp;focus.point.lon=2.8178000450134277&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5" target="_blank">https://eines.icgc.cat/geocodificador/autocompletar?text=biblioteca<strong>&amp;focus.point.lat=41.97952806717199&amp;focus.point.lon=2.8178000450134277</strong>&amp;layers=topo1%2Ctopo2%2Caddress&amp;size=5 </a></p>
 </div>
 <p><img alt="" src="../img/visorPrioritzarDoble.png" /></p>
-<h2 id="tipus-delements-a-cercar">Tipus d'elements a cercar</h2>
-<p>Els elements cercats pertanyen a una de les següents capes (indicades al paràmetre <strong>layers</strong>):</p>
+<h2 id="type-of-elements-to-search">Type of elements to search</h2>
+<p>The searched elements belong to one of the following layers (indicated in the <strong>layers</strong> parameter):</p>
 <ul>
 <li>
-<p><strong>topo1</strong>: topònims de poblament o agrupacions de població (nom de municipi, cap de municipi, entitat de població, disseminat, barri), mostrant en primer lloc els topònims que són nom de municipi o cap de municipi.
-Apareixen a la llista de resultats amb el prefix <span style="color:green">(poblament)</span>.</p>
+<p><strong>topo1</strong>: toponyms referring to population groups (municipalities, capitals of municipalities, population entities, disseminated and neighborhoods), showing first the toponyms that are name or capital of municipality.
+They appear in the list of results with the prefix <span style="color:green">(population)</span>.</p>
 </li>
 <li>
-<p><strong>topo2</strong>: resta de topònims.
-Apareixen a la llista de resultats amb el prefix <span style="color:blue">(topònim)</span>.</p>
+<p><strong>topo2</strong>: rest of toponyms.
+They appear in the list of results with the prefix <span style="color:blue">(place name)</span>.</p>
 </li>
 <li>
 <p><strong>address</strong>: portals.
-Apareixen a la llista de resultats amb el prefix <span style="color:red">(portal)</span>.</p>
+They appear in the list of results with the prefix <span style="color:red">(portal)</span>.</p>
 </li>
 </ul>
-<h2 id="nombre-maxim-de-resultats">Nombre màxim de resultats</h2>
-<p>El paràmetre <strong>size</strong> s'ha assignat a 5, per mostrar com a màxim 5 elements de cada una de les capes.</p>
-<h2 id="consulta-del-tipus-de-toponims">Consulta del tipus de topònims</h2>
-<p>Al situar el cursor sobre un element trobat de les capes <strong>topo1</strong> o <strong>topo2</strong>, es mostra el tipus de topònim (camp <strong>addendum.tipus</strong>):</p>
+<h2 id="maximum-number-of-results">Maximum number of results</h2>
+<p>The <strong>size</strong> parameter has been set to 5, to display at most 5 elements from each layer.</p>
+<h2 id="query-of-the-type-of-toponyms">Query of the type of toponyms</h2>
+<p>When placing the cursor over a  <strong>topo1</strong> or <strong>topo2</strong> element, toponym type is displayed (<strong>addendum.type</strong> field):</p>
 <p><img alt="" src="../img/tipusToponimsVisor.png" /></p>
-<h2 id="descarrega">Descàrrega</h2>
-<p>Es pot descarregar de:  <a href="https://github.com/OpenICGC/leaflet-geocodericgc-plugin" target="_blank">https://github.com/OpenICGC/leaflet-geocodericgc-plugin</a> </p>
-<h2 id="implementacio">Implementació</h2>
-<p>S'ha implementat amb la llibreria <strong>Leaflet</strong>, utilitzant el plugin <em>leaflet-geocoder-mapzen</em>.</p>
-<p>S’utilitza el plugin <em>leaflet-geocoder-mapzen</em> <a href="https://www.npmjs.com/package/leaflet-geocoder-mapzen" target="_blank">https://www.npmjs.com/package/leaflet-geocoder-mapzen</a>, que s’ha modificat per gestionar els paràmetres <strong>size</strong> i <strong>focus</strong>, el prefix i tooltip de cada resultat (camp <strong>addendum.tipus</strong> en cas dels topònims) i el nivell de zoom del mapa (camp <strong>addendum.zoom</strong> en cas dels topònims)</p>
-<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Carregar</span><span class="w"> </span><span class="nx">codi</span><span class="w"> </span><span class="nx">Leaflet</span><span class="w"> </span><span class="nx">del</span><span class="w"> </span><span class="nx">cdn</span><span class="w"> </span><span class="o">--&gt;</span>
+<h2 id="download">Download</h2>
+<p>It can be downloaded from: <a href="https://github.com/OpenICGC/leaflet-geocodericgc-plugin" target="_blank">https://github.com/OpenICGC/leaflet-geocodericgc-plugin</a></p>
+<h2 id="implementation">Implementation</h2>
+<p>It has been implemented with the <strong>Leaflet</strong> library, using the <em>leaflet-geocoder-mapzen</em> plugin.</p>
+<p><em>leaflet-geocoder-mapzen</em> plugin is used <a href="https://www.npmjs.com/package/leaflet-geocoder-mapzen">https://www.npmjs.com/package/leaflet-geocoder-mapzen</a> {target="_blank"}, which has been modified to manage the <strong>size</strong> and <strong>focus</strong> parameters, the prefix and tooltip of each result (<strong>addendum.type</strong> field in the case of toponyms) and the zoom level of the map (<strong>addendum.zoom</strong> field in the case of toponyms)</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">&lt;!--</span><span class="nx">Upload</span><span class="w"> </span><span class="nx">Leaflet</span><span class="w"> </span><span class="nx">code</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">cdn</span><span class="w"> </span><span class="o">--&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="o">&lt;</span><span class="nx">link</span><span class="w"> </span><span class="nx">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span><span class="w"> </span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css&quot;</span><span class="o">&gt;</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Carregar</span><span class="w"> </span><span class="nx">plugin</span><span class="w"> </span><span class="nx">Leaflet</span><span class="w"> </span><span class="nx">de</span><span class="w"> </span><span class="nx">geocodificació</span><span class="w"> </span><span class="nx">mapzen</span><span class="o">--&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c">&lt;!--</span><span class="w"> </span><span class="nx">Download</span><span class="w"> </span><span class="nx">Mapzen</span><span class="w"> </span><span class="nx">Geocoding</span><span class="w"> </span><span class="nx">Leaflet</span><span class="w"> </span><span class="nx">plugin</span><span class="w"> </span><span class="o">--&gt;</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="o">&lt;</span><span class="nx">script</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="s2">&quot;js/leaflet-geocoder.js&quot;</span><span class="o">&gt;&lt;</span><span class="err">/script&gt;</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// Crear el mapa</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1">// Create the map</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">&#39;map&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nx">center</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">41.431</span><span class="p">,</span><span class="w"> </span><span class="mf">1.8580</span><span class="p">],</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nx">zoom</span><span class="o">:</span><span class="w"> </span><span class="mf">8</span><span class="p">,</span>
@@ -1280,13 +1286,13 @@ Apareixen a la llista de resultats amb el prefix <span style="color:red">(portal
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="nx">geoc</span>
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="nx">L</span><span class="p">.</span><span class="nx">control</span><span class="p">.</span><span class="nx">geocoder</span><span class="p">(</span><span class="nx">geocodingOptions</span><span class="p">).</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
 </span></code></pre></div>
-<h2 id="codi-per-a-incrustar-el-visor">Codi per a incrustar el visor</h2>
-<p>Per inserir el visor al vostre web, copieu i enganxeu el text següent:
-<div class="language-html copy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">marginheight</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginwidth</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://eines.icgc.cat/geocodificador_visor/&quot;</span> <span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<h2 id="code-to-embed-the-viewer">Code to embed the viewer</h2>
+<p>To embed the viewer on your website, copy and paste the following text:
+<div class="language-html copy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;500&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">marginheight</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">marginwidth</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://eines.icgc.cat/geocodificador_visor/&quot;</span> <span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </span></code></pre></div></p>
-<h2 id="funcionalitat-pwa">Funcionalitat PWA</h2>
-<p>El visor Leaflet <a href="https://eines.icgc.cat/geocodificador_visor/" target="_blank">https://eines.icgc.cat/geocodificador_visor/</a> és una aplicació web progressiva (PWA) que presenta la possibilitat de ser baixada i iniciada des de la pantalla principal o el menú d'aplicacions de qualsevol dispositiu amb un navegador web.</p>
-<p>Per instal·lar l'aplicació, a Chrome:</p>
+<h2 id="pwa-functionality">PWA functionality</h2>
+<p>The Leaflet viewer <a href="https://eines.icgc.cat/geocodificador_visor/" target="_blank">https://eines.icgc.cat/geocodificador_visor/</a> is a progressive web application (PWA) that presents the possibility to be downloaded and launched from the main screen or application menu of any device with a web browser.</p>
+<p>To install the app, in Chrome:</p>
 <p><strong>Windows</strong> </p>
 <p><img alt="" src="../img/pwa1.png" /></p>
 <p><strong>Android</strong> </p>
@@ -1337,7 +1343,7 @@ Apareixen a la llista de resultats amb el prefix <span style="color:red">(portal
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiat al porta-retalls", "clipboard.copy": "C\u00f2pia al porta-retalls", "search.result.more.one": "1 m\u00e9s en aquesta p\u00e0gina", "search.result.more.other": "# m\u00e9s en aquesta p\u00e0gina", "search.result.none": "Cap document coincideix", "search.result.one": "1 document coincident", "search.result.other": "# documents coincidents", "search.result.placeholder": "Escriu per a comen\u00e7ar a cercar", "search.result.term.missing": "Desaparegut", "select.version": "Selecciona la versi\u00f3"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
