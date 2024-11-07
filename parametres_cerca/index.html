@@ -956,6 +956,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex_pk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.12 Search for a kilometric point
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1164,7 +1185,7 @@
 <h1 id="search-by-indicating-the-whole-address">Search by indicating the whole address</h1>
 <p>Connection URL: <a href="https://eines.icgc.cat/geocodificador/cerca" target="_blank">https://eines.icgc.cat/geocodificador/cerca</a> (GET)</p>
 <h2 id="description">Description</h2>
-<p>The <strong>cerca</strong> operation (Forward geocoding) returns the data and location of an address or toponym.</p>
+<p>The <strong>cerca</strong> operation (Forward geocoding) returns the data and location of an address, a toponym or a kilometric point.</p>
 <p>In the simplest search, you can build a query where the <strong>text</strong> parameter is set to the item you want to find.</p>
 <p>The output is in GeoJSON format.</p>
 <p>For example, to search for the coordinates corresponding to the address <em>carrer nou 10,girona</em>, you should send the query <a href="https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&amp;layers=address&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=carrer nou 10,girona&amp;layers=address&amp;size=1</a>, which has the answer: <img alt="" src="../img/cerca-adreces.png" /></p>
@@ -1185,6 +1206,9 @@
 <li>
 <p><span style="color:red"><em>toponym, municipality</em><span style="color:red"></p>
 </li>
+<li>
+<p><span style="color:red"><em>road, km (or road km)</em><span style="color:red"></p>
+</li>
 </ul>
 <p>Examples:</p>
 <div class="language-text highlight"><pre><span></span><code>- [https://eines.icgc.cat/geocodificador/cerca?text=nou 10,girona&amp;layers=address](https://eines.icgc.cat/geocodificador/cerca?text=nou 10,girona&amp;layers=address){target=&quot;_blank&quot;}
@@ -1192,6 +1216,8 @@
 - [https://eines.icgc.cat/geocodificador/cerca?text=can riera,Vilademuls&amp;layers=topo2](https://eines.icgc.cat/geocodificador/cerca?text=can riera,Vilademuls&amp;layers=topo2){target=&quot;_blank&quot;}
 
 - [https://eines.icgc.cat/geocodificador/cerca?text=montclar,riudecanyes&amp;layers=topo1](https://eines.icgc.cat/geocodificador/cerca?text=montclar,riudecanyes&amp;layers=topo1){target=&quot;_blank&quot;}
+
+- [https://eines.icgc.cat/geocodificador/cerca?text=c-25 143.0&amp;layers=pk](https://eines.icgc.cat/geocodificador/cerca?text=c-25 143.0&amp;layers=pk){target=&quot;_blank&quot;}
 </code></pre></div>
 <ul>
 <li><strong>layers</strong>: Filter by data type</li>
@@ -1203,6 +1229,7 @@
 <p>The following values ​​can be indicated to segregate the toponyms into two groups:</p>
 <p>.<strong>topo1</strong>: toponyms referring to population groups (municipalities, capitals of municipalities, population entities, disseminated and neighborhoods)</p>
 <p>.<strong>topo2</strong>: rest of toponyms.</p>
+<p>. <strong>pk</strong>: kilometric point.</p>
 <p>Example, to find toponyms with the name <em>Riera de Gaià</em>: <a href="https://eines.icgc.cat/geocodificador/cerca?text=riera%20de%20gaia&amp;layers=topo1,topo2" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=riera%20de%20gaia&amp;layers=topo1,topo2</a></p>
 <ul>
 <li><strong>size</strong>: is used to define the maximum number of results</li>
@@ -1284,8 +1311,8 @@
 <td><strong>layers</strong></td>
 <td>text string</td>
 <td>No</td>
-<td>Type of elements to search: [address, tops, <em>topo_tipus_id</em>, topo1, topo2]</td>
-<td>topo1,topo2,address</td>
+<td>Type of elements to search: [address, tops, <em>topo_tipus_id</em>, topo1, topo2, pk]</td>
+<td>topo1,topo2,address,pk</td>
 <td>address,topo1</td>
 </tr>
 <tr>
@@ -1389,28 +1416,28 @@
 </tr>
 <tr>
 <td><strong>etiqueta</strong></td>
-<td>Field Aggregation. By address: portal street, municipality (<em>'llogaret'</em>). Note: If the <em>'llogaret'</em> coincides with the municipality, it is not indicated. By place names: place name, municipality</td>
+<td>Field Aggregation. By address: portal street, municipality (<em>'llogaret'</em>). Note: If the <em>'llogaret'</em> coincides with the municipality, it is not indicated. By place names: place name, municipality.By kilometric point: road km</td>
 <td>All</td>
 </tr>
 <tr>
 <td><strong>municipi</strong></td>
 <td>Municipality. In some toponyms, there is no municipality assigned and it takes the value "-"</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>id_municipi</strong></td>
 <td>Municipi ID. In some toponyms, there is no municipality assigned and it takes the value ""</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>comarca</strong></td>
 <td>'comarca'. In some toponyms, there is no 'comarca' assigned and it takes the value "-"</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>id_comarca</strong></td>
 <td>'comarca' ID. In some toponyms, there is no 'comarca' assigned and it takes the value ""</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>llogaret</strong></td>
@@ -1425,7 +1452,7 @@
 <tr>
 <td><strong>nom</strong></td>
 <td>Name of the street, isolated building or toponym</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>tipus_via</strong></td>
@@ -1477,6 +1504,16 @@
 <td>UTM coordinates of the rectangle containing the street</td>
 <td>Addresses</td>
 </tr>
+<tr>
+<td><strong>via</strong></td>
+<td>Road ID</td>
+<td>Kilometric point</td>
+</tr>
+<tr>
+<td><strong>km</strong></td>
+<td>KM (to 1 decimal places)</td>
+<td>Kilometric point</td>
+</tr>
 </tbody>
 </table>
 <h2 id="output-examples-according-to-layer-type">Output examples according to layer type</h2>
@@ -1507,6 +1544,21 @@
 </tr>
 <tr>
 <td><img alt="" src="../img/cerca-top.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Kilometric point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://eines.icgc.cat/geocodificador/cerca?text=c-25%20143.0&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/cerca?text=c-25%20143.0&amp;layers=pk&amp;size=1</a></td>
+</tr>
+<tr>
+<td><img alt="" src="../img/pk.png" /></td>
 </tr>
 </tbody>
 </table>

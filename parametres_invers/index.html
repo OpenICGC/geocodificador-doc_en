@@ -956,6 +956,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ex_pk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.12 Search for a kilometric point
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1164,7 +1185,7 @@
 <h1 id="reverse-search">Reverse search</h1>
 <p>Connection URL: <a href="https://eines.icgc.cat/geocodificador/invers" target="_blank">https://eines.icgc.cat/geocodificador/invers</a> (GET)</p>
 <h2 id="description">Description</h2>
-<p>The <strong>invers</strong> operation (reverse geocoding) searches for the closest addresses and place names to a given geographic point, specified by its latitude and longitude.</p>
+<p>The <strong>invers</strong> operation (reverse geocoding) searches for the closest addresses, place names or kilometric points to a given geographic point, specified by its latitude and longitude.</p>
 <p>The result is obtained in GeoJSON format.</p>
 <p>For example, to search for the address closest to the coordinates <em>41.385965, 2.16687</em>, you must make the request <a href="https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers=address" target="_blank">https://eines.icgc.cat/geocodificador/invers?lat=41.385965&amp;lon=2.16687&amp;size=1&amp;layers= address</a>, which has the answer: <img alt="" src="../img/invers.png" /></p>
 <h2 id="building-the-query">Building the query</h2>
@@ -1190,6 +1211,7 @@
 <p>The following values ​​can be indicated to segregate the toponyms into two groups:</p>
 <p>.<strong>topo1</strong>: toponyms referring to population groups (municipalities, capitals of municipalities, population entities, disseminated and neighborhoods)</p>
 <p>.<strong>topo2</strong>: rest of toponyms.</p>
+<p>.<strong>pk</strong>: kilometric point.</p>
 <div class="language-text highlight"><pre><span></span><code>Example, to find toponyms: [http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops](http://eines.icgc.cat/geocodificador/invers?lon=0.20949814&amp;lat=41.12599206&amp;layers=tops){target=&quot;_blank&quot;}
 </code></pre></div>
 <ul>
@@ -1256,8 +1278,8 @@
 <td><strong>layers</strong></td>
 <td>text string</td>
 <td>No</td>
-<td>Type of elements to search: [address, tops, <em>topo_tipus_id</em>, topo1, topo2]</td>
-<td>topo1,topo2,address</td>
+<td>Type of elements to search: [address, tops, <em>topo_tipus_id</em>, topo1, topo2, pk]</td>
+<td>topo1,topo2,address,pk</td>
 <td>address,topo1</td>
 </tr>
 <tr>
@@ -1304,34 +1326,29 @@
 <td>All</td>
 </tr>
 <tr>
-<td><strong>distance</strong></td>
-<td>Distance in kilometers of the item found at the indicated point</td>
-<td>All</td>
-</tr>
-<tr>
 <td><strong>etiqueta</strong></td>
-<td>Field Aggregation. By address: portal street, municipality (<em>'llogaret'</em>). Note: If the <em>'llogaret'</em> coincides with the municipality, it is not indicated. By place names: place name, municipality</td>
+<td>Field Aggregation. By address: portal street, municipality (<em>'llogaret'</em>). Note: If the <em>'llogaret'</em> coincides with the municipality, it is not indicated. By place names: place name, municipality.By kilometric point: road km</td>
 <td>All</td>
 </tr>
 <tr>
 <td><strong>municipi</strong></td>
 <td>Municipality. In some toponyms, there is no municipality assigned and it takes the value "-"</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>id_municipi</strong></td>
 <td>Municipi ID. In some toponyms, there is no municipality assigned and it takes the value ""</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>comarca</strong></td>
 <td>'comarca'. In some toponyms, there is no 'comarca' assigned and it takes the value "-"</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>id_comarca</strong></td>
 <td>'comarca' ID. In some toponyms, there is no 'comarca' assigned and it takes the value ""</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>llogaret</strong></td>
@@ -1346,7 +1363,7 @@
 <tr>
 <td><strong>nom</strong></td>
 <td>Name of the street, isolated building or toponym</td>
-<td>All</td>
+<td>Addresses and toponyms</td>
 </tr>
 <tr>
 <td><strong>tipus_via</strong></td>
@@ -1393,6 +1410,16 @@
 <td>UTM coordinates of the rectangle containing the street</td>
 <td>Addresses</td>
 </tr>
+<tr>
+<td><strong>via</strong></td>
+<td>Road ID</td>
+<td>Kilometric point</td>
+</tr>
+<tr>
+<td><strong>km</strong></td>
+<td>KM (to 1 decimal places)</td>
+<td>Kilometric point</td>
+</tr>
 </tbody>
 </table>
 <h2 id="output-examples-according-to-layer-type">Output examples according to layer type</h2>
@@ -1423,6 +1450,21 @@
 </tr>
 <tr>
 <td><img alt="" src="../img/invers3.png" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Kilometric point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1" target="_blank">https://eines.icgc.cat/geocodificador/invers?lon=1.90750462&amp;lat=41.78388114&amp;layers=pk&amp;size=1</a></td>
+</tr>
+<tr>
+<td><img alt="" src="../img/inverspk.png" /></td>
 </tr>
 </tbody>
 </table>
